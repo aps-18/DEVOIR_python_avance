@@ -321,14 +321,10 @@ def update_dashboard(sexe, villes):
 #  ## Lancement de l'application
 
 # %%
-print("Dashboard disponible ici : http://127.0.0.1:8055/")
-app.run()
-
-
-
 server = app.server
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    print("Dashboard disponible ici : http://127.0.0.1:8055/")
+    app.run(debug=False, port=8055)
 
 
